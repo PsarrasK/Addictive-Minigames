@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="blended_layout.css">
+<title>ADDICTIVE MINIGAMES - On The Way to the Demo</title>
+<meta name="description" content="Write some words to describe your html page">
+
+<style>
+*{
+padding : 0;
+margin : 0;
+border : 0;
+}
+body{
+background-image : url("http://i1180.photobucket.com/albums/x411/rival-sac/fgame/bg.jpg");
+background-attachment : fixed;
+background-size : 100% auto;
+}
+.blended_grid{
+background-color : rgba(0, 0, 0, 0.35);
+display : block;
+width : 1304px;
+overflow : auto;
+margin : 0px auto 0 auto;
+border: 0px solid black;
+border-radius: 10px;
+}
+.pageHeader{
+background-color : rgba(0, 0, 0, 0.45);
+float : left;
+clear : none;
+height : 80px;
+width : 1300px;
+border: 2px solid black;
+border-radius: 10px;
+}
+.pageLeftMenu{
+background-color : rgba(0, 0, 0, 0);
+float : left;
+clear : none;
+height : 550px;
+width : 300px;
+}
+.pageInsideLeftMenu{
+background-color : rgba(0, 0, 0, 0.45);
+clear : none;
+height : 230px;
+width : 260px;
+border: 2px solid black;
+border-radius: 10px;
+box-shadow: 0 5px 0px 0 rgba(0,0,0,0.45);
+}
+.pageRightMenu{
+background-color : rgba(0, 0, 0, 0);
+float : left;
+clear : none;
+height : 550px;
+width : 1004px;
+}
+.pageInsideRightMenu{
+background-color : rgba(0, 0, 0, 0.45);
+clear : none;
+height : 510px;
+width : 980px;
+border: 2px solid black;
+border-radius: 10px;
+box-shadow: 0 5px 0px 0 rgba(0,0,0,0.45);
+}
+.pageFooter{
+background-color : rgba(0, 0, 0, 0.45);
+float : left;
+clear : none;
+height : 100px;
+width : 1300px;
+border: 2px solid black;
+border-radius: 10px;
+}
+
+
+	a:link {
+		color: white;
+	}
+	a:visited {
+		color: white;
+	}
+	
+	h2 {
+		font-size: 22px;
+		color: white;
+	}
+	
+	h4 {
+		color: white;
+	}
+	
+	.button {
+	  margin-top: -0.5em;
+	  display: inline-block;
+	  padding: 8px 20px;
+	  width:220px;
+	  font-size: 20px;
+	  cursor: pointer;
+	  text-align: center;	
+	  text-decoration: none;
+	  outline: none;
+	  color: #fff;
+	  background-color: #EA4335;
+	  border: 2px solid black;
+	  border-radius: 10px;
+	  box-shadow: 0 5px 0px 0 rgba(0,0,0,0.45);
+	}
+	.button:hover {background-color: #FBBC05}
+
+</style>
+
+</head>
+<body>
+	<!--FACEBOOK SDK-->
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '1757107064521717',
+		  xfbml      : true,
+		  version    : 'v2.5'
+		});
+
+		// ADD ADDITIONAL FACEBOOK CODE HERE
+		function onLogin(response) {
+		  if (response.status == 'connected') {
+			FB.api('/me?fields=name', function(data) {
+			  var welcomeBlock = document.getElementById('fb-welcome');
+			  welcomeBlock.innerHTML = 'Logged in as ' + data.name + '.';
+			});
+		  }
+		}
+		
+		FB.getLoginStatus(function(response) {
+		  // Check login status on load, and if the user is
+		  // already logged in, go directly to the welcome message.
+		  if (response.status == 'connected') {
+			onLogin(response);
+		  } else {
+			// Otherwise, show Login dialog first.
+			FB.login(function(response) {
+			  onLogin(response);
+			}, {scope: 'user_friends, email'});
+		  }
+		});
+	  };
+
+	  (function(d, s, id){
+		 var js, fjs = d.getElementsByTagName(s)[0];
+		 if (d.getElementById(id)) {return;}
+		 js = d.createElement(s); js.id = id;
+		 js.src = "//connect.facebook.net/en_US/sdk.js";
+		 fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+	
+	<div class="blended_grid">
+
+		<div class="pageHeader">
+			<center><br>
+				<h2 id="fb-welcome"></h2>
+			</center><br>
+		</div>
+
+		<div class="pageLeftMenu"><br>
+			<center>
+				<img src="http://i1180.photobucket.com/albums/x411/rival-sac/fgame/gamelogo7.png" alt="can't find image" style="width:260px;height:275px;">
+				<div class="pageInsideLeftMenu"><br>
+					<h2>MENU</h2><br>
+					<button class="button"><a href="https://dl.dropbox.com/s/e31ydoh3a4oe8tw/13new.html/"><h4>START GAME</h4></a></button><br><br>
+					<button class="button"><a href="https://dl.dropbox.com/s/5wlfsmy01uq4pu7/13about.html/"><h4>ABOUT</h4></a></button><br><br>
+					<button class="button"><a href="https://dl.dropbox.com/s/6q1bv7ycyvqg63c/13credits.html/"><h4>CREDITS</h4></a></button><br><br>
+				</div>
+			</center>
+		</div>
+
+		<div class="pageRightMenu"><br>
+			<div class="pageInsideRightMenu"><br>
+				<center>
+					<h2>CREDITS</h2><br><br>
+					<h2>Addictive Minigames homework-project team:</h2><br>
+					<h2>Papageorgiou Chris - Psarras Konstantinos</h2><br>
+					<h2></h2><br>
+					<h2></h2><br>
+					<h2></h2><br>
+				</center>
+			</div>
+		</div>
+
+		<div class="pageFooter">
+			<center><br><br>
+				<h4>IF YOU CAN'T SEE THE WHOLE PAGE ZOOM IN/OUT USING CTRL AND +/-.</h4>
+			</center><br>
+		</div>
+	
+	</div>
+</body>
+</html>
+

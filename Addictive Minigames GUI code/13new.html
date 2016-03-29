@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="blended_layout.css">
+<title>ADDICTIVE MINIGAMES - On The Way to the Demo</title>
+<meta name="description" content="Write some words to describe your html page">
+
+<style>
+*{
+padding : 0;
+margin : 0;
+border : 0;
+}
+body{
+background-image : url("http://i1180.photobucket.com/albums/x411/rival-sac/fgame/bg.jpg");
+background-attachment : fixed;
+background-size : 100% auto;
+}
+.blended_grid{
+background-color : rgba(0, 0, 0, 0.35);
+display : block;
+width : 1304px;
+overflow : auto;
+margin : 0px auto 0 auto;
+border: 0px solid black;
+border-radius: 10px;
+}
+.pageHeader{
+background-color : rgba(0, 0, 0, 0.45);
+float : left;
+clear : none;
+height : 80px;
+width : 1300px;
+border: 2px solid black;
+border-radius: 10px;
+}
+.pageLeftMenu{
+background-color : rgba(0, 0, 0, 0);
+float : left;
+clear : none;
+height : 550px;
+width : 300px;
+}
+.pageInsideLeftMenu{
+background-color : rgba(0, 0, 0, 0.45);
+clear : none;
+height : 230px;
+width : 260px;
+border: 2px solid black;
+border-radius: 10px;
+box-shadow: 0 5px 0px 0 rgba(0,0,0,0.45);
+}
+.pageContent{
+background-color : rgba(0, 0, 0, 0);
+float : left;
+clear : none;
+height : 550px;
+width : 600px;
+}
+.pageRightMenu{
+background-color : rgba(0, 0, 0, 0);
+float : left;
+clear : none;
+height : 550px;
+width : 404px;
+}
+.pageInsideRightMenu{
+background-color : rgba(0, 0, 0, 0.45);
+clear : none;
+height : 510px;
+width : 360px;
+border: 2px solid black;
+border-radius: 10px;
+box-shadow: 0 5px 0px 0 rgba(0,0,0,0.45);
+}
+.pageFooter{
+background-color : rgba(0, 0, 0, 0.45);
+float : left;
+clear : none;
+height : 100px;
+width : 1300px;
+border: 2px solid black;
+border-radius: 10px;
+}
+
+
+	a:link {
+		color: white;
+	}
+	a:visited {
+		color: white;
+	}
+	
+	h2 {
+		font-size: 22px;
+		color: white;
+	}
+	
+	h4 {
+		color: white;
+	}
+	
+	.button {
+	  margin-top: -0.5em;
+	  display: inline-block;
+	  padding: 8px 20px;
+	  width:220px;
+	  font-size: 20px;
+	  cursor: pointer;
+	  text-align: center;	
+	  text-decoration: none;
+	  outline: none;
+	  color: #fff;
+	  background-color: #EA4335;
+	  border: 2px solid black;
+	  border-radius: 10px;
+	  box-shadow: 0 5px 0px 0 rgba(0,0,0,0.45);
+	}
+	.button:hover {background-color: #FBBC05}
+
+</style>
+
+<style>
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #F7F7F7;
+		margin: auto;
+		padding: 20px;
+		width: 80%;
+		border: 2px solid black;
+		border-radius: 10px;
+		box-shadow: 0 5px 0px 0 rgba(0,0,0);
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	.CmBtn {
+		background-color: #2b3f6e;
+		color: #F7F7F7;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 11.2px;
+		padding: 5px 0px;
+		border-radius: 2px;
+		width:155px;
+		
+		}
+</style>
+
+<style>
+	/* The Modal1 (background) */
+	.modal1 {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content1 {
+		background-color: #F7F7F7;
+		margin: auto;
+		padding: 20px;
+		width: 50%;
+		border: 2px solid black;
+		border-radius: 10px;
+		box-shadow: 0 5px 0px 0 rgba(0,0,0);
+	}
+
+	/* The Close Button */
+	.close1 {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close1:hover,
+	.close1:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	.CmBtn1 {
+		background-color: #EA4335;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 11.2px;
+		padding: 3px;
+		color: #F7F7F7;
+		border-radius: 1.5px;
+		width:158px;		
+	}
+	
+</style>
+
+</head>
+<body>
+	<!--FACEBOOK SDK-->
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '1757107064521717',
+		  xfbml      : true,
+		  version    : 'v2.5'
+		});
+
+		// ADD ADDITIONAL FACEBOOK CODE HERE
+		function onLogin(response) {
+		  if (response.status == 'connected') {
+			FB.api('/me?fields=name', function(data) {
+			  var welcomeBlock = document.getElementById('fb-welcome');
+			  welcomeBlock.innerHTML = 'Logged in as ' + data.name + '.';
+			});
+		  }
+		}
+		
+		FB.getLoginStatus(function(response) {
+		  // Check login status on load, and if the user is
+		  // already logged in, go directly to the welcome message.
+		  if (response.status == 'connected') {
+			onLogin(response);
+		  } else {
+			// Otherwise, show Login dialog first.
+			FB.login(function(response) {
+			  onLogin(response);
+			}, {scope: 'user_friends, email'});
+		  }
+		});
+	  };
+
+	  (function(d, s, id){
+		 var js, fjs = d.getElementsByTagName(s)[0];
+		 if (d.getElementById(id)) {return;}
+		 js = d.createElement(s); js.id = id;
+		 js.src = "//connect.facebook.net/en_US/sdk.js";
+		 fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div class="blended_grid">
+
+		<div class="pageHeader">
+			<center><br>
+				<h2 id="fb-welcome"></h2>
+			</center><br>
+		</div>
+
+		<div class="pageLeftMenu"><br>
+			<center>
+				<img src="http://i1180.photobucket.com/albums/x411/rival-sac/fgame/gamelogo7.png" alt="can't find image" style="width:260px;height:275px;">
+				<div class="pageInsideLeftMenu"><br>
+					<h2>OTHER GAMES</h2><br>
+					<button class="button"><a href="https://dl.dropbox.com/s/e31ydoh3a4oe8tw/13new.html/"><h4>HEXTRIS</h4></a></button><br><br>
+					<button class="button"><a href=""><h4>RESERVED</h4></a></button><br><br>
+					<button class="button"><a href=""><h4>RESERVED</h4></a></button><br><br>
+				</div>
+			</center>
+		</div>
+
+		<div class="pageContent">
+			<center><br><br>
+				<h2>HEXTRIS</h2>
+				<div class="fb-like" data-href="https://apps.facebook.com/addictive_minigames/" data-width="150" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+				<div class="fb-send" data-href="https://apps.facebook.com/addictive_minigames/"></div><br>
+				<!-- Trigger/Open The Modal -->
+				<button id="myBtn1" class="CmBtn1">Instructions</button>
+				
+				<center>
+					<br><object width="500" height="370" data="https://dl.dropbox.com/s/gh1djfmouknkwpr/index.html"></object>
+				</center>
+				
+				<!-- The Modal -->
+				<div id="myModal1" class="modal1">
+					<!-- Modal content -->
+					<div class="modal-content1">
+					<span class="close1"></span>
+					
+						<span style='color:#000000'><h3>HOW TO PLAY</h3><br><p>The goal of Hextris is to stop blocks from leaving the inside of the outer gray hexagon.</p><br>
+						<p>Press the right and left arrow keys to rotate the hexagon.</p><br>
+						<p>Clear blocks and get points by making 3 or more blocks of the same color touch.</p><br>
+						<p>Time left before your combo streak disappears is indicated by the colored lines on the outer hexagon.</p><br> 
+							By <a href='http://loganengstrom.com' target='_blank' style='color:#000000'>Logan Engstrom</a> 
+							& <a href='http://github.com/garrettdreyfus' target='_blank' style='color:#000000'>Garrett Finucane</a><br>Find Hextris on 
+							the <a href ='http://hextris.github.io/' target='_blank' style='color:#000000'>Hextris Website</a></span>
+							<br><a href="https://play.google.com/store/apps/details?id=com.hextris.hextris" target='_blank'><img id='androidBadge' width="152" height="45" src='http://i1180.photobucket.com/albums/x411/rival-sac/fgame/google.png' /></a>
+							<a href ="https://itunes.apple.com/us/app/hextris/id903769553?mt=8" target='_blank'><img id='iOSBadge' width="152" height="45" src='http://i1180.photobucket.com/albums/x411/rival-sac/fgame/apple.png' /></a><br>
+							This work is under a <a href='http://www.gnu.org/licenses/gpl-3.0.en.html' target='_blank' style='color:#000000'>GPL v3 license</a>
+							
+			</center>
+		</div>
+
+		<div class="pageRightMenu">
+			<center><br>
+				<div class="pageInsideRightMenu"><br>
+					<h2>FRIENDS HIGHSCORES</h2><br>
+				</div>
+			</center>
+		</div>
+
+		<div class="pageFooter">
+			<center><br>
+				<h4>IF YOU CAN'T SEE THE WHOLE PAGE ZOOM IN/OUT USING CTRL AND +/-.</h4>
+				
+				<!-- Trigger/Open The Modal -->
+				<button id="myBtn" class="CmBtn">Leave Your Comment Here</button>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+					<span class="close">×</span>
+					<!-- Allows the user to post to their wall from in your app. Also allows them to like your app -->
+					<center><div id="comments"><fb:comments numposts="8" data-href="https://apps.facebook.com/addictive_minigames/" title="My Blog Comments" simple="1" width="800px" colorscheme="light"></fb:comments></div></center>
+					</div>
+				</div>
+			</center><br>
+		</div>
+	
+	</div>
+	
+	<!--Modal for comments JavaScript code-->
+	<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>
+	
+	<!--Modal1 for comments JavaScript code-->
+	<script>
+	// Get the modal
+	var modal1 = document.getElementById('myModal1');
+
+	// Get the button that opens the modal
+	var btn1 = document.getElementById("myBtn1");
+
+	// Get the <span> element that closes the modal
+	var span1 = document.getElementsByClassName("close1")[0];
+
+	// When the user clicks the button, open the modal 
+	btn1.onclick = function() {
+		modal1.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span1.onclick = function() {
+		modal1.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal1) {
+			modal1.style.display = "none";
+		}
+	}
+	</script>
+	
+</body>
+</html>
+
