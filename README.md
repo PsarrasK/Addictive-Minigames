@@ -16,7 +16,7 @@
 Στο Github έχει ανέβει ο κώδικας της εφαρμογής: https://github.com/PsarrasK/Addictive-Minigames.git
 
 και η σελίδα της εφαρμογής στο facebook βρίσκεται στο ακόλουθο link:
-https://apps.facebook.com/addictive_minigames/
+https://apps.facebook.com/addictive_minigamez/
 
 ##Παραδοτέο 3
 
