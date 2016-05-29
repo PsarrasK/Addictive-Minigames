@@ -44,7 +44,7 @@ Screenshots:
 
 ![alt tag](https://dl.dropbox.com/s/qbsp3mopyngm4hp/Screenshot%202016-05-29%2023.35.57.png)
 ![alt tag](https://dl.dropbox.com/s/jf86gllb92giu3c/Screenshot%202016-05-29%2023.36.55.png)
-![alt tag](https://dl.dropbox.com/s/bpr7c9dmw3t88bi/Screenshot%202016-05-30%2000.14.02.png)
+![alt tag](https://dl.dropbox.com/s/38x3bcabjvww1uc/Screenshot%202016-05-30%2000.14.02.png)
 ![alt tag](https://dl.dropbox.com/s/cvn6yed26q9x1bt/Screenshot%202016-05-29%2023.41.13.png)
 ![alt tag](https://dl.dropbox.com/s/coahsolut0qfdmj/Screenshot%202016-05-29%2023.41.49.png)
 ![alt tag](https://dl.dropbox.com/s/r6duay0zh2ems6i/Screenshot%202016-05-29%2023.36.41.png)
